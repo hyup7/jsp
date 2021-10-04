@@ -1,0 +1,85 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <div id="review_writer">
+        <h1>리뷰등록</h1> <img src="/imgs/닫기.png" alt="닫기" width="50px" height="50px" id="close_img">
+        <div>
+            <form action="" method="" enctype="">
+                <div style="position: relative; width: 520px; height: auto; border: 1px black solid;">
+                    <input type="text" name="reviewtitle" placeholder="제목을 입력해주세요" style="width: 500px;"> <br> <br>
+                    <textarea name="reviewcontent" id="" cols="23" rows="10" placeholder="내용을 입력해주세요" style="resize: none; width: 500px;"></textarea> <br>
+                        <br>
+                    <input type="file" name="reviewimg"> 
+                    <p id="star">별점:
+                        <a href="#" value="1">★</a>
+                        <a href="#" value="2">★</a>
+                         <a href="#" value="3">★</a>
+                        <a href="#" value="4">★</a> 
+                        <a href="#" value="5">★</a>
+                    
+                    </p>
+                    <input type="hidden" value="0" id="starvalue">
+                    <br>
+
+                    <p style="text-align: center;"><button type="submit" id="review_btn1">등록</button></p>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    $("#star a").click(e=>{ 
+        $(e.target).parent().children("a").removeClass("on"); 
+        $(e.target).addClass("on").prevAll("a").addClass("on"); 
+        console.log($(e.target).attr("value"));
+        $("#starvalue").val($(e.target).attr("value")); 
+    });
+    $("#review_btn1").click(e=>{
+      
+   window.close();
+  
+    })
+    $("#close_img").click(e=>{
+        window.close();
+    })
+
+    
+
+</script>
+<style>
+    #close_img{
+        position: relative;
+        left: 480px;
+        bottom: 64px;
+        cursor: pointer;
+
+    }
+    #review_btn1{
+        width: 100%;
+        height: 40px;
+        background-color: rgb(255, 106, 0);
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        
+
+    }
+    #star{
+        position: absolute;
+        left: 300px;
+        top: 200px;
+    }
+    #star a{ 
+        text-decoration: none;
+        color: gray;
+        font-size: 30px; 
+    } 
+    #star a.on{ 
+        color: yellow; 
+    }
+
+</style>
+
+

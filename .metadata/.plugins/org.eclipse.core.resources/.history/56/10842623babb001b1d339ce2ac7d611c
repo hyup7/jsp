@@ -1,0 +1,322 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ include file="/views/common/header.jsp"%>
+
+       <section class="sectionbody">
+
+		<%@ include file="/views/rooms/roomviewtop.jsp" %>
+             <div id="ad_formbody_cho" class="line">
+                <h1 id="ad_frombody_cho1" class="curser_pointer">숙소정보</h1>
+                <h1>|</h1>
+               <h1 id="ad_frombody_cho2" class="curser_pointer"> 리뷰</h1>
+                <h1>|</h1>
+               <h1 id="ad_frombody_cho3" class="curser_pointer"> 객실안내/예약</h1>
+
+             </div>
+             <!-- 숙소 정보 클릭시 
+            
+            
+            
+            -->
+             <div id="ad_formbody_inform_cho">
+             <div id="ad_formbody_inform" class="line">
+                 <div class="line"><h2>기본정보</h2></div>
+                 <ul class="ul_style">
+                    <li>공지사항</li>
+                    <li>주변정보</li>
+                    <li>이용정보</li>
+                    <li>기본사항</li>
+                    <li>추가정보</li>
+                </ul>
+
+             </div>
+             <div id="ad_formbody_map" class="line">
+
+                map 공간
+             </div>
+             <div id="ad_formbody_fu" class="line">
+                <h2>편의시설</h2>
+                <div class="ad_formbody_fuimg line"><img src="" alt="" width="50px" height="50px"><p>와이파이</p></div>
+                <div class="ad_formbody_fuimg line"><img src="" alt="" width="50px" height="50px"><p>와이파이</p></div>
+                <div class="ad_formbody_fuimg line"><img src="" alt="" width="50px" height="50px"><p>와이파이</p></div>
+                <div class="ad_formbody_fuimg line"><img src="" alt="" width="50px" height="50px"><p>와이파이</p></div>
+             </div>
+           </div>
+                        <!-- 리뷰 클릭시 
+            
+            
+            
+            -->
+
+           <div id="ad_formbody_review_cho">
+               <div id="ad_formbody_review" class="line">
+                    <div class="line"><h2>리뷰</h2></div>
+                   
+                    <div class="line">                       
+                        <button id="review_btn">리뷰등록</button>
+                    </div>
+
+                    
+                    <div class="review line">
+                        <div class="review_img line">
+                            <img src="" alt="" height="200px" width="200px">
+                            </div>
+                                <div class="review_id">
+                                <h1>----아이디------</h1>
+                                <br>
+                                <p>------------------------------------------------------------------------------<br>
+                                ---------------------------------------------------------------------------------<br>
+                                ---------------------------------------------------------------------------------<br>
+                                ---------------------------------------------------------------------------------<br>
+                                ---------------------------------------------------------------------------------<br>
+                                ---------------------------------------------------------------------------------<br>
+                                
+                                </p>
+                                </div>
+                                <div id="star_rating" class="line">                             
+                                    ★  ★  ★  ★  ★  
+                                    </div>
+
+                    </div>
+
+                    <div class="review line">
+                        <div class="review_img line">
+                            <img src="" alt="" height="200px" width="200px">
+                            </div>
+                                <div class="review_id">
+                                <h1>----아이디------</h1>
+                                <br>
+                                <p>------------------------------------------------------------------------------<br>
+                                ---------------------------------------------------------------------------------<br>
+                                ---------------------------------------------------------------------------------<br>
+                                ---------------------------------------------------------------------------------<br>
+                                ---------------------------------------------------------------------------------<br>
+                                ---------------------------------------------------------------------------------<br>
+                                
+                                </p>
+                                </div>
+                                <div id="star_rating" class="line">                             
+                                    ★  ★  ★  ★  ★  
+                                    </div>
+
+                    </div>
+              
+                </div>
+                    
+       
+                    
+
+                
+
+
+                 
+           </div>
+                        <!-- 객실/예약 클릭시 
+            
+            
+            
+            -->
+            <div id="ad_formbody_rv_cho">
+                <div id="ad_formbody_rv" class="line">
+                     <div class="line"><h2>객실/예약</h2></div>
+                </div>
+
+                <div class="ad_formbody_rv">
+                        <div><img src="" alt="" width="300px" height="300px"></div>
+                    <div class="ad_formbody_rv_right line">
+                    <h1>--------객실이름---------</h1>
+                    <h1 class="rv_price">-----가격-----</h1>
+                    <h1 class="rv_inform">객실안내></h1>
+                    <button class="rv_btn">예약하기</button>
+                     </div> 
+                </div>
+
+                <div class="ad_formbody_rv">
+                    <div><img src="" alt="" width="300px" height="300px"></div>
+                <div class="ad_formbody_rv_right line">
+                <h1>--------객실이름---------</h1>
+                <h1 class="rv_price">-----가격-----</h1>
+                <h1 class="rv_inform">객실안내></h1>
+                <button class="rv_btn">예약하기</button>
+                 </div> 
+            </div>
+
+               
+            </div>
+
+
+
+
+        </section>
+    
+</body>
+</html>
+<script>
+$("#ad_frombody_cho1").click((e)=>{
+    console.log("눌림?");
+    $("#ad_formbody_inform_cho").css("display","block");
+    $("#ad_formbody_review_cho").css("display","none");
+    $("#ad_formbody_rv_cho").css("display","none");
+});
+$("#ad_frombody_cho2").click((e)=>{
+    $("#ad_formbody_inform_cho").css("display","none");
+    $("#ad_formbody_review_cho").css("display","block");
+    $("#ad_formbody_rv_cho").css("display","none");
+});
+$("#ad_frombody_cho3").click((e)=>{
+    $("#ad_formbody_inform_cho").css("display","none");
+    $("#ad_formbody_review_cho").css("display","none");
+    $("#ad_formbody_rv_cho").css("display","block");
+});
+</script>
+<style>
+    #ad_formbody_review_cho{
+        display: none;
+    }
+    #ad_formbody_rv_cho{
+        display: none;
+    }
+    .rv_btn{
+        position: absolute;
+        top: 250px;
+        left: 450px;
+        background-color: rgb(255, 106, 0);
+        color: white;
+        width: 100px;
+        height: 50px;
+        font-size: 15px;
+        border: white;
+        border-radius: 10px;
+        
+    }
+    .rv_inform{
+        position: absolute;
+        top: 200px;
+        left: 450px;
+    }
+    .rv_price{
+        position: absolute;
+        top: 200px;
+    }
+    #ad_formbody_rv{
+        padding-left: 50px;
+        
+       
+    }
+    .ad_formbody_rv_right{
+        margin-left: 100px;
+        width: 600px;
+        position: relative;
+        background-color: silver;
+        
+    }
+    .ad_formbody_rv{
+        margin-top: 100px;
+        margin-left: 100px;
+        display: flex;
+    }
+    
+    .review{
+        display: flex;
+        
+    }
+    #review_btn{
+        background-color: rgb(255, 106, 0);
+        color: white;
+        border-radius: 10px;
+        left: 1000px;
+        margin: 10px 100px 0px 900px;
+        width: 100px;
+        height: 50px;
+        font-size: 15px;
+        border: white;
+    }
+
+    #ad_formbody_review{
+       padding-left: 50px;
+    }
+    .none_and_block{
+        display: none;
+    }
+    .ad_formbody_fuimg{
+        display: inline-block;
+    }
+    #ad_formbody_map{
+        width: 100%;
+        height: 600px;
+    }
+
+    #ad_formbody_fu{
+        width: 100%;
+        height: 600px;
+    }
+    .ul_style>li{
+        list-style: square;
+        margin-left: 30px;
+    }
+    #ad_formbody_inform{
+        padding-left: 50px;
+       
+    }
+    #ad_formbody_cho{
+        padding-left: 50px;
+    }
+    #ad_formbody_cho>h1{
+        display: inline-block;
+        color:rgb(255, 106, 0);
+
+    }
+
+    #star_rating{
+        color: yellow;
+        display: flex;
+        font-size: 50px;
+    }
+    
+    .line{
+        border: 1px black solid;
+    }
+    #ad_inform{ 
+        
+        width: 100%;
+        height: 500px;
+        
+    }
+    #ad_informimg{
+        display: flex;
+        margin: 70px 0px 0px 100px;
+        width: 1000px;
+        height: 400px;
+    }
+    #ad_informimg_sub>img{
+        margin: 10px 0px 0px 15px;
+    }
+    #ad_formimg_ex{
+        margin-left: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    #ad_form_writer{
+        height: 180px;
+    }
+    .curser_pointer{
+        cursor: pointer;
+    }
+    </style>
+    <script src="jquery-3.6.0.min.js">
+    
+    </script>
+    <script>
+        var popupWidth = 200;
+        var popupHeight = 300;
+        var popupX = (window.screen.width / 2) - (popupWidth / 2);
+        // 만들 팝업창 width 크기의 1/2 만큼 보정값으로 빼주었음
+        var popupY= (window.screen.height / 2) - (popupHeight / 2);
+        // 만들 팝업창 height 크기의 1/2 만큼 보정값으로 빼주었음
+        $("#test1").click((e)=>{
+            open('공유하기.html','', 'status=no, height=' + popupHeight  + ', width=' + popupWidth  + ', left='+ popupX + ', top='+ popupY);
+        })
+    	$("#review_btn").click((e)=>{
+            open('<%=request.getContextPath()%>/views/rooms/reviewwrite','', 'status=no, height=500px width=600px, left='+ popupX + ', top='+ popupY)
+        })
+    </script>

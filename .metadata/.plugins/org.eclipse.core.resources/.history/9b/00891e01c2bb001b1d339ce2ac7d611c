@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <div id="roominform_share">
+        <h1>공유하기</h1><img src="<%=request.getContextPath() %>/imgs/닫기.png" alt="닫기" width="50px" height="50px" id="close_img">
+        <span>숙소 정보를 공유해보세요!</span>
+        <div id="share_img">
+        <img src="카카오톡.png" alt="">
+        <img src="페이스북.png" alt="">
+        <img src="인스타그램1.png" alt="">
+        <img src="구글.png" alt="">
+        <img src="네이버블로그.png" alt="">
+        <img src="트위터1.png" alt="">
+
+        </div> 
+
+    </div>
+</body>
+</html>
+<style>
+    #roominform_share h1{
+        color: rgb(255, 106, 0);
+    }
+    #roominform_share{
+        width: 500px;
+        height: 500px;
+    }
+    #share_img img{
+        width: 100px;
+        height: 100px;
+        margin: 10px 10px 10px 10px;
+    }
+    #close_img{
+        position: relative;
+        left: 450px;
+        bottom: 64px;
+        cursor: pointer;
+
+    }
+</style>

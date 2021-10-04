@@ -1,0 +1,20 @@
+ <br>
+    <a href="www naver.com">^=</a>
+    <a href="ww-naver.com">^=</a>
+    <a href="_wwwnaver.com">^=</a>
+    <br>
+    <a href="naver com">~=</a>
+    <a href="naver net">~=</a>
+    <a href="co kr naver">~=</a>
+    <br>
+    <a href="www naver-net">naver-net</a>
+    <a href="naver net">naver net</a>
+    <a href="naver~net">naver~net</a>
+    <a href="www-naver-net">www-naver-net</a>
+    <br>
+    <a href="www.naver.com">www.naver.com</a>
+    <a href="www.google.com">www.google.com</a>
+    <a href="www.comnate">www.nate.com</a>
+    <br>
+    <img src="https://pds.joins.com/news/component/htmlphoto_mmdata/201912/14/07712b9e-e451-49c7-a65c-fb94b6dcda0b.jpg" 
+    width="200" height="200" alt="마동석">

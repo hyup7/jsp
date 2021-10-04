@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+            <div id="ad_inform" class="line">
+                <div id="ad_informimg" class="line">
+                    <div class="line">
+                        <img src="" alt="" width="500px" height="250px">
+                        <div id="ad_informimg_sub" class="line">
+                            <img src="" alt="" width="100px" height="100px">
+                            <img src="" alt="" width="100px" height="100px">
+                            <img src="" alt="" width="100px" height="100px">
+                            <img src="" alt="" width="100px" height="100px">
+                            <div id="ad_informimg_bar" style="text-align: center;">
+                                      * * * * *
+                            </div>
+                             
+                        </div>
+                    </div>  
+                    <div id="ad_formimg_ex" class="line">
+                        <div class="line">
+                            <h1 id="ad_form_name">
+                                ----숙소 이름----
+                            </h1>
+                        </div>
+                        <div class="line" id="ad_form_writer">
+                            <h3>사장님 한마디</h3>
+                            <p>숙소 설명 간략 설명--------------------</p>
+                        </div>
+                        <div class="line">
+                            <a href="#" id="test1"><img src="공유하기.png" alt="공유하기버튼" height="50px" width="100px"></a>
+                        </div>
+                        <div id="ad_form_sc">
+                            <h2>별점</h2>
+                            <div id="star_rating" class="line">                             
+                                ★  ★  ★  ★  ★  
+                            <p style="color: black;">4/5  </p>                    
+                            </div>
+
+                        </div>
+
+                    </div> 
+                </div>
+
+
+             </div>

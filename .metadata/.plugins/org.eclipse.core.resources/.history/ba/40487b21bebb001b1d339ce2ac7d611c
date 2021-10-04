@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ include file="/views/common/header.jsp"%>
+ <script src="<%=request.getContextPath()%>/js/jquery-3.6.0.min.js"></script>
+    <div id="room_ex">
+    <h1>객실 안내</h1> <img src="닫기.png" alt="닫기" width="50px" height="50px" id="close_img">
+
+    <h2>기본이용정보</h2>
+    <ul>
+        <li>인원 최소 몇명| 추가시 ? 얼마</li>
+        <li>방1개</li>
+        <li>침대 갯수 ?개 유형 싱글/더블</li>
+        <li>방+욕실</li>
+        <li>체크인 10:10/마감10:10</li>
+    </ul>
+    <h2>편의시설</h2>
+    <ul>
+        <li>와이파이</li>
+        <li>샤워실</li>
+    </ul>
+    </div>
+</body>
+</html>
+
+<script>
+       
+    $("#close_img").click(e=>{
+        window.close();
+    })
+</script>
+<style>
+    #room_ex>h1{
+        color: rgb(255, 106, 0);
+    }
+    #room_ex{
+        position: relative;
+    }
+    #close_img{
+        position: absolute;
+        left: 480px;
+        bottom: 290px;
+        cursor: pointer;
+    }
+
+</style>

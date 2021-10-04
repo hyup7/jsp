@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;03_lisler/web/Insert title here.html&apos; to &apos;index.html&apos;" description="Rename resource &apos;Insert title here.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="web/Insert title here.html" name="index.html" stamp="1620045495835" updateReferences="true"/>
+</session>

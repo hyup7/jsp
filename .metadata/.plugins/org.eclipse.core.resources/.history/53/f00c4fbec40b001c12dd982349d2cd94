@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		
+		int i=sc.nextInt();//테스트 횟수
+	
+		StringBuilder a=new StringBuilder();
+		for(int m=0;m<i;m++) {
+			int x=sc.nextInt();
+			int y=sc.nextInt();
+
+			a.append(x+y+"\n");
+		}
+		System.out.println(a);
+	}
+}
